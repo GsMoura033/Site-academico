@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SIGAx - Sistema Integrado de Gestão Acadêmica - UFJF">
+    <title>SIGAx - UFJF | Início</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Header Bar -->
+    <header class="top-header" id="top-header">
+        <div class="header-left">
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                <span class="material-icons-outlined">menu</span>
+            </button>
+            <div class="logo">
+                <img src="ufjf-logo.svg" alt="UFJF" class="logo-ufjf-img">
+                <span class="logo-divider">|</span>
+                <span class="logo-sigax">SIGAx</span>
+            </div>
+        </div>
+        <div class="header-right">
+            <button class="header-icon-btn" id="notification-btn" aria-label="Notificações">
+                <span class="material-icons">notifications</span>
+            </button>
+            <div class="user-profile" id="user-profile">
+                <div class="user-avatar">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='20' fill='%23e0e0e0'/%3E%3Ccircle cx='20' cy='15' r='7' fill='%239e9e9e'/%3E%3Cellipse cx='20' cy='32' rx='12' ry='10' fill='%239e9e9e'/%3E%3C/svg%3E" alt="Avatar">
+                </div>
+                <div class="user-info">
+                    <span class="user-name-small">Gustavo</span>
+                    <span class="user-id-small">202407163GV</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <span class="sidebar-search-label">Pesquisar no menu</span>
+            <button class="sidebar-search-btn" aria-label="Pesquisar">
+                <span class="material-icons-outlined">search</span>
+            </button>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li class="nav-item active" id="nav-inicio">
+                    <span class="material-icons nav-icon">home</span>
+                    <span class="nav-label">Início</span>
+                </li>
+                <li class="nav-item" id="nav-portal">
+                    <span class="material-icons nav-icon">cast_for_education</span>
+                    <span class="nav-label">Portal do aluno</span>
+                    <span class="nav-arrow" aria-hidden="true"></span>
+                </li>
+                <li class="nav-item no-icon" id="nav-vida-academica">
+                    <span class="nav-label">Vida acadêmica</span>
+                    <span class="nav-arrow" aria-hidden="true"></span>
+                </li>
+                <li class="nav-item no-icon" id="nav-flexibilizacao">
+                    <span class="nav-label">Flexibilização curricular</span>
+                    <span class="nav-arrow" aria-hidden="true"></span>
+                </li>
+                <li class="nav-item no-icon" id="nav-projetos">
+                    <span class="nav-label">Projetos</span>
+                    <span class="nav-arrow" aria-hidden="true"></span>
+                </li>
+                <li class="nav-item no-icon" id="nav-ru">
+                    <span class="nav-label">RU</span>
+                    <span class="nav-arrow" aria-hidden="true"></span>
+                </li>
+                <li class="nav-item no-icon" id="nav-meu-curso">
+                    <span class="nav-label">Meu curso</span>
+                    <span class="nav-arrow" aria-hidden="true"></span>
+                </li>
+                <li class="nav-item" id="nav-planejamento">
+                    <span class="material-icons nav-icon">account_balance</span>
+                    <span class="nav-label">Planejamento e finanças</span>
+                    <span class="nav-arrow" aria-hidden="true"></span>
+                </li>
+                <li class="nav-item" id="nav-galeria">
+                    <span class="material-icons nav-icon">apps</span>
+                    <span class="nav-label">Galeria de aplicações</span>
+                    <span class="nav-arrow" aria-hidden="true"></span>
+                </li>
+                <li class="nav-item" id="nav-cultura">
+                    <span class="material-icons nav-icon">music_note</span>
+                    <span class="nav-label">Cultura</span>
+                    <span class="nav-arrow" aria-hidden="true"></span>
+                </li>
+                <li class="nav-item" id="nav-radar">
+                    <span class="material-icons nav-icon">track_changes</span>
+                    <span class="nav-label">Radar de Oportunidades</span>
+                </li>
+                <li class="nav-item nav-divider"></li>
+                <li class="nav-item" id="nav-sair">
+                    <span class="material-icons nav-icon">exit_to_app</span>
+                    <span class="nav-label">Sair</span>
+                </li>
+                <li class="nav-item nav-divider"></li>
+                <li class="nav-item nav-ead" id="nav-ead">
+                    <span class="ead-logo" aria-hidden="true">
+                        <img src="moodle-ead.png" alt="" class="ead-logo-img" width="32" height="23">
+                    </span>
+                    <span class="ead-label">EAD</span>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Sidebar Overlay for mobile -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <!-- Main Content Area -->
+    <main class="main-content" id="main-content">
+        <!-- Page Title Bar -->
+        <div class="page-title-bar" id="page-title-bar">
+            <span class="material-icons">home</span>
+            <span>Início</span>
+        </div>
+
+        <!-- Content Grid -->
+        <div class="content-grid">
+            <!-- Left Column -->
+            <div class="content-col-left">
+                <!-- Rest. Universitário Card -->
+                <div class="card" id="card-ru">
+                    <h2 class="card-title blue">Rest. Universitário</h2>
+                    <div class="ru-saldo">
+                        <span>Saldo:</span>
+                        <span class="saldo-valor">R$ 0,00</span>
+                        <button class="eye-btn" aria-label="Ocultar saldo">
+                            <span class="material-icons-outlined">visibility_off</span>
+                        </button>
+                    </div>
+                    <div class="ru-almoco-box">
+                        <div class="ru-almoco-header">Almoço de Hoje - Campus GV</div>
+                        <div class="ru-almoco-body">
+                            <p>O Almoço não foi cadastrado</p>
+                        </div>
+                    </div>
+                    <p class="ru-disclaimer">* O cardápio pode ser alterado sem aviso prévio</p>
+                    <div class="card-action-center">
+                        <div class="action-icon-circle blue">
+                            <span class="material-icons">restaurant</span>
+                        </div>
+                        <span class="action-label">Cardápio Semanal</span>
+                    </div>
+                </div>
+
+                <!-- Horários Card (dynamic content generated by JS) -->
+                <div class="card" id="card-horarios">
+                    <h2 class="card-title blue">Horários</h2>
+                    <div id="horarios-container">
+                        <!-- JS will populate this -->
+                    </div>
+                    <div class="card-action-center">
+                        <div class="action-icon-circle blue">
+                            <span class="material-icons">calendar_view_month</span>
+                        </div>
+                        <span class="action-label">Grade de Horários</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="content-col-right">
+                <!-- Vida Acadêmica Card -->
+                <div class="card" id="card-vida-academica">
+                    <h2 class="card-title blue">Vida Acadêmica</h2>
+                    
+                    <div class="student-name-bar">
+                        GUSTAVO GABRIEL SIQUEIRA DE MOURA
+                    </div>
+
+                    <div class="academic-info">
+                        <div class="info-row">
+                            <div class="info-block full">
+                                <span class="info-label">Curso</span>
+                                <span class="info-value">07GV - MEDICINA</span>
+                            </div>
+                        </div>
+                        <div class="info-row two-cols">
+                            <div class="info-block">
+                                <span class="info-label">Matrícula</span>
+                                <span class="info-value">202407163GV</span>
+                            </div>
+                            <div class="info-block">
+                                <span class="info-label">Situação</span>
+                                <span class="info-value">Ativo</span>
+                            </div>
+                        </div>
+                        <div class="info-row two-cols">
+                            <div class="info-block">
+                                <span class="info-label">Período letivo vigente</span>
+                                <span class="info-value">2026 / 1</span>
+                            </div>
+                            <div class="info-block">
+                                <span class="info-label-inline">
+                                    <span>IRA</span>
+                                    <button class="eye-btn small" aria-label="Mostrar IRA">
+                                        <span class="material-icons-outlined">visibility</span>
+                                    </button>
+                                </span>
+                                <span class="info-value ira-hidden">••,••</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-divider-title">Ingresso</div>
+
+                    <div class="ingresso-info">
+                        <div class="info-block full">
+                            <span class="info-label">Tipo</span>
+                            <span class="info-value">Programa de Ingresso Seletivo Misto - Grupo D</span>
+                        </div>
+                        <div class="info-block full">
+                            <span class="info-label">Semestre</span>
+                            <span class="info-value">2024 / 1</span>
+                        </div>
+                    </div>
+
+                    <div class="action-buttons-row">
+                        <div class="action-btn-item">
+                            <div class="action-icon-circle blue">
+                                <span class="material-icons">calculate</span>
+                            </div>
+                            <span class="action-label">Notas</span>
+                        </div>
+                        <div class="action-btn-item">
+                            <div class="action-icon-circle blue">
+                                <span class="material-icons">input</span>
+                            </div>
+                            <span class="action-label">Comprovante de Matrícula</span>
+                        </div>
+                        <div class="action-btn-item">
+                            <div class="action-icon-circle blue">
+                                <span class="material-icons">schedule</span>
+                            </div>
+                            <span class="action-label">Histórico Escolar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Processos Seletivos Card -->
+                <div class="card" id="card-processos">
+                    <h2 class="card-title blue">Processos Seletivos</h2>
+                    <div class="action-buttons-row">
+                        <div class="action-btn-item">
+                            <div class="action-icon-circle blue">
+                                <span class="material-icons">track_changes</span>
+                            </div>
+                            <span class="action-label">Meus Processos Seletivos</span>
+                        </div>
+                        <div class="action-btn-item">
+                            <div class="action-icon-circle blue">
+                                <span class="material-icons">laptop_mac</span>
+                            </div>
+                            <span class="action-label">Meus projetos</span>
+                        </div>
+                        <div class="action-btn-item">
+                            <div class="action-icon-circle blue">
+                                <span class="material-icons">assignment</span>
+                            </div>
+                            <span class="action-label">Processos Seletivos Abertos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Datas Importantes Card -->
+                <div class="card" id="card-datas">
+                    <h2 class="card-title blue">Datas Importantes</h2>
+                    <table class="datas-table">
+                        <tbody>
+                            <tr>
+                                <td class="data-range">
+                                    <div class="date-col">
+                                        <span class="date-day">15</span>
+                                        <span class="date-month">JUN</span>
+                                    </div>
+                                    <span class="date-separator">-</span>
+                                    <div class="date-col">
+                                        <span class="date-day">4</span>
+                                        <span class="date-month">JUN</span>
+                                    </div>
+                                </td>
+                                <td class="data-desc">Solicitação de Flexibilização</td>
+                            </tr>
+                            <tr>
+                                <td class="data-range">
+                                    <div class="date-col">
+                                        <span class="date-day">15</span>
+                                        <span class="date-month">JUN</span>
+                                    </div>
+                                    <span class="date-separator">-</span>
+                                    <div class="date-col">
+                                        <span class="date-day">21</span>
+                                        <span class="date-month">SET</span>
+                                    </div>
+                                </td>
+                                <td class="data-desc">Parecer do pedido de flexibilização</td>
+                            </tr>
+                            <tr>
+                                <td class="data-range">
+                                    <div class="date-col">
+                                        <span class="date-day">15</span>
+                                        <span class="date-month">JUN</span>
+                                    </div>
+                                    <span class="date-separator">-</span>
+                                    <div class="date-col">
+                                        <span class="date-day">9</span>
+                                        <span class="date-month">OUT</span>
+                                    </div>
+                                </td>
+                                <td class="data-desc">Matrícula em disciplinas com vagas ociosas (com reserva de vagas por curso)</td>
+                            </tr>
+                            <tr>
+                                <td class="data-range">
+                                    <div class="date-col">
+                                        <span class="date-day">24</span>
+                                        <span class="date-month">JUL</span>
+                                    </div>
+                                    <span class="date-separator">-</span>
+                                    <div class="date-col">
+                                        <span class="date-day">30</span>
+                                        <span class="date-month">JUL</span>
+                                    </div>
+                                </td>
+                                <td class="data-desc">Autorização de inscrição de formandos para colação de grau</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="card-action-center">
+                        <div class="action-icon-circle blue">
+                            <span class="material-icons">event_note</span>
+                        </div>
+                        <span class="action-label">Calendário Acadêmico</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
